@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/emacampolo/link-tracker/cmd/server/handler"
+	"github.com/emacampolo/link-tracker/cmd/web/server/handler"
 	"github.com/emacampolo/link-tracker/internal/link"
 	"github.com/emacampolo/link-tracker/internal/platform/web"
 )

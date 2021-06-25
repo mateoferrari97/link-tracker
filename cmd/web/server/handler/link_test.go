@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
+	handler2 "github.com/emacampolo/link-tracker/cmd/web/server/handler"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 
-	"github.com/emacampolo/link-tracker/cmd/server/handler"
 	"github.com/emacampolo/link-tracker/internal/link"
 
 	"github.com/stretchr/testify/mock"
@@ -56,7 +56,7 @@ func TestLink_Create(t *testing.T) {
 	svcMock := &linkServiceMock{}
 	svcMock.On("Create", req.Context(), r.Link, r.Password).Return(l, nil)
 
-	linkHandler := handler.NewLink(svcMock)
+	linkHandler := handler2.NewLink(svcMock)
 
 	// When
 	linkHandler.Create().ServeHTTP(rr, req)
@@ -100,7 +100,7 @@ func TestLink_Create_RequiredFields(t *testing.T) {
 			svcMock := &linkServiceMock{}
 			svcMock.On("Create", req.Context(), tc.req.Link, tc.req.Password).Return(l, nil)
 
-			linkHandler := handler.NewLink(svcMock)
+			linkHandler := handler2.NewLink(svcMock)
 
 			// When
 			linkHandler.Create().ServeHTTP(rr, req)
@@ -127,7 +127,7 @@ func TestLink_Create_RequiredFields(t *testing.T) {
 	svcMock := &linkServiceMock{}
 	svcMock.On("Create", req.Context(), r.Link, r.Password).Return(l, nil)
 
-	linkHandler := handler.NewLink(svcMock)
+	linkHandler := handler2.NewLink(svcMock)
 
 	// When
 	linkHandler.Create().ServeHTTP(rr, req)
