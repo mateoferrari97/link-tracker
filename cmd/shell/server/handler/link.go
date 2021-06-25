@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/emacampolo/link-tracker/internal/link"
-	"github.com/emacampolo/link-tracker/internal/platform/shell"
+	"github.com/mateoferrari97/link-tracker/internal/link"
+	"github.com/mateoferrari97/link-tracker/internal/platform/shell"
 )
 
 type Link struct {

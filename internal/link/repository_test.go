@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/emacampolo/link-tracker/internal/link"
+	"github.com/mateoferrari97/link-tracker/internal/link"
 	"github.com/stretchr/testify/require"
 )
 

@@ -4,9 +4,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/emacampolo/link-tracker/cmd/shell/server/handler"
-	"github.com/emacampolo/link-tracker/internal/link"
-	"github.com/emacampolo/link-tracker/internal/platform/shell"
+	"github.com/mateoferrari97/link-tracker/cmd/shell/server/handler"
+	"github.com/mateoferrari97/link-tracker/internal/link"
+	"github.com/mateoferrari97/link-tracker/internal/platform/shell"
 )
 
 /*

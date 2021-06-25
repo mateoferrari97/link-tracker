@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/emacampolo/link-tracker/internal/link"
-	"github.com/emacampolo/link-tracker/internal/platform/web"
+	"github.com/mateoferrari97/link-tracker/internal/link"
+	"github.com/mateoferrari97/link-tracker/internal/platform/web"
 )
 
 type Link struct {
